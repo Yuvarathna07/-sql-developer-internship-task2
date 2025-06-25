@@ -1,0 +1,20 @@
+--1. Insert complete data values
+INSERT INTO employees (name, email, phone, salary, department, join_date) 
+VALUES ('John Smith', 'john@company.com', '1234567890', 60000, 'IT', '2023-01-15');
+
+-- 2. Insert with some NULL values
+INSERT INTO employees (name, email, join_date) 
+VALUES ('Sarah Johnson', 'sarah@company.com', '2023-02-20');
+
+-- 3. Insert without email (NULL)
+INSERT INTO employees (name, phone, salary, department, join_date) 
+VALUES ('Mike Davis', '9876543210', 55000, 'HR', '2023-03-10');
+
+-- 4. Insert with default salary
+INSERT INTO employees (name, email, department, join_date) 
+VALUES ('Emily Brown', 'emily@company.com', 'Marketing', '2023-04-05');
+
+-- 5. Insert multiple rows at once
+INSERT INTO employees (name, email, phone, department, join_date) VALUES
+('David Wilson', 'david@company.com', '5555555555', 'Finance', '2023-05-12'),
+('Anna Taylor', 'anna@company.com', '4444444444', 'IT', '2023-06-01');
