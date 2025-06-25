@@ -1,0 +1,8 @@
+-- See all employees
+SELECT * FROM employees;
+
+-- See employees with NULL phone numbers
+SELECT * FROM employees WHERE phone IS NULL;
+
+-- See employees with NULL email
+SELECT * FROM employees WHERE email IS NULL;
