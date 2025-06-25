@@ -1,0 +1,17 @@
+ Show data with NULL handling
+SELECT 
+    id,
+    name,
+    IFNULL(email, 'No Email') as email_display,
+    IFNULL(phone, 'No Phone') as phone_display,
+    salary,
+    IFNULL(department, 'No Department') as dept_display,
+    join_date
+FROM employees;
+
+-- Count employees by department (including NULL)
+SELECT 
+    IFNULL(department, 'No Department') as dept,
+    COUNT(*) as total_employees
+FROM employees
+GROUP BY department;
