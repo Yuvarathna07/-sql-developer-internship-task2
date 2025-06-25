@@ -1,0 +1,18 @@
+UPDATE employees 
+SET salary = 65000 
+WHERE name = 'John Smith';
+
+-- 2. Update phone number for employee with NULL phone
+UPDATE employees 
+SET phone = '1111111111' 
+WHERE name = 'Sarah Johnson';
+
+-- 3. Update multiple employees in same department
+UPDATE employees 
+SET salary = salary + 5000 
+WHERE department = 'IT';
+
+-- 4. Update NULL emails with default value
+UPDATE employees 
+SET email = 'noemail@company.com' 
+WHERE email IS NULL;
