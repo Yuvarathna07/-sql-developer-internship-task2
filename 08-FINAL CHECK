@@ -1,0 +1,10 @@
+-- View final data
+SELECT * FROM employees ORDER BY id;
+
+-- Check for any NULL values
+SELECT 
+    COUNT(*) as total_employees,
+    COUNT(email) as employees_with_email,
+    COUNT(phone) as employees_with_phone,
+    COUNT(department) as employees_with_department
+FROM employees;
